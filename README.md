@@ -4,4 +4,4 @@
 29704 3
 
 ## Team Members:
-#### 1. Hunter Schramm @[hunterschr](https://github.com/hunterschr)
+#### 1. Hunter Schramm [@hunterschr](https://github.com/hunterschr)
