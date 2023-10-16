@@ -5,3 +5,14 @@
 
 ## Team Members:
 #### 1. Hunter Schramm [@hunterschr](https://github.com/hunterschr)
+
+## Problem Description:
+
+
+## Data Model:
+
+## Data Dictionary:
+
+## Queries:
+
+## Database Information:
