@@ -5,7 +5,7 @@
 
 ## Team Members:
 #### 1. Hunter Schramm [@hunterschr](https://github.com/hunterschr)
-
+    2. Will Hensley  [@Willhens15] (https://github.com/willhens15)
 ## Problem Description:
 
 
