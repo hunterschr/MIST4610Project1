@@ -14,6 +14,18 @@
 
 ## Data Dictionary:
 
+### Table: Admin
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| Content Cell  | Content Cell  | 
+| Content Cell  | Content Cell  |
+
+### Table: Insurance Providers
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| Content Cell  | Content Cell  | 
+| Content Cell  | Content Cell  |
+
 ## Queries:
 
 ## Database Information:
