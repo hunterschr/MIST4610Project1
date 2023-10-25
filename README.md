@@ -11,20 +11,24 @@
 
 
 ## Data Model:
+Explanation of data model:
 
+Our model is based on the structure of an emergency healthcare clinic. 
 ## Data Dictionary:
 
-### Table: Admin
-| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
-| ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| Content Cell  | Content Cell  | 
-| Content Cell  | Content Cell  |
 
-### Table: Insurance Providers
+### Table: InsuranceProviders
+
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| Content Cell  | Content Cell  | 
-| Content Cell  | Content Cell  |
+| insuranceID  | PK, unique number identifying insurance provider   | INT | | | PK |
+| policyNo  | Number of policy on file  | VARCHAR | 45 | | |
+| coverage  | Coverage of policy  | VARCHAR | 45 | | |
+| providerName  | Name of insurance provider  | VARCHAR | 45 | | |
+| providerPhone  | Phone number for insurance provider  | VARCHAR | 45 | | |
+| providerEmail  | Email for insurance provider  | VARCHAR | 45 | | |
+| insuranceRate  | Cost of insurance  | INT | | | |
+| patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | INT | | | FK - Patient |
 
 ## Queries:
 
