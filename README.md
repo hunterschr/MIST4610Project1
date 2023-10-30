@@ -39,6 +39,16 @@ Our model is based on the structure of an emergency healthcare clinic.
 | insuranceRate  | Cost of insurance  | INT | | | |
 | patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | INT | | | FK - Patient |
 
+### Table: servicesProvided
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 5 | | PK |
+| serviceName  | Name of service  | VARCHAR | 45 | | |
+| department  | Department that handles the service  | VARCHAR | 45 | | |
+| description  | Description of the service  | VARCHAR | 100 | | |
+| cost  | Cost of the service  | VARCHAR | 45 | | |
+
 ## Queries:
 
 ## Database Information:
