@@ -75,6 +75,15 @@ The ``employeeType`` table keep track of the types of employees through the type
 | description  | Description of the service  | VARCHAR | 100 | | |
 | cost  | Cost of the service  | VARCHAR | 45 | | |
 
+### Table: Prescription
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 6 | | PK |
+| medicationName | Name of medicine | VARCHAR | 45 | | |
+| prescriptionDate | Date of filling  | VARCHAR | 45 | | |
+| dosage | # of milligrams  | VARCHAR | 2 | | |
+| pharmacyLocation | Location of filling| VARCHAR | 45 | | |
+
 ## Queries:
 
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
