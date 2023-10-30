@@ -26,6 +26,13 @@ Our model is based on the structure of an emergency healthcare clinic.
 | date  | Date of appointment  | DATETIME | | | |
 | time  | Time of appointment  | DATETIME | | | |
 
+### Table: employeeType
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| typeID  | PK, unique name identifying employee type   | VARCHAR | 5 | | PK |
+| descriptionOfRole  | Description of the role for the employee type  | VARCHAR | 45 | | |
+
 ### Table: InsuranceProviders
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
