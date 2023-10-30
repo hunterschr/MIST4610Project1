@@ -15,7 +15,24 @@ We are tasked with modeling and building a reltional database for an emergency h
 ## Data Model:
 Explanation of data model:
 
-Our model is based on the structure of an emergency healthcare clinic. 
+Our database model is based on the structure of an emergency healthcare clinic. The central entity in the model is the ``patient`` table, which contains important information about all patients who visit the clinic, such as their patient ID, phone number, email, and date of birth. The patient's ID is used as the primary identifier for patients throughout the database, so it is referenced in many other tables.
+
+The first table that references the patient ID is the ``MedicalRecords`` table. Each patient has one medical record and each medical record belongs to one patient. The ``MedicalRecords`` table contains information such as the record ID, diagnosis, and test results.
+
+As each patient sees their assigned doctor they might be prescribed medications. The result of this relationship is the ``Prescription`` table. Each patient can have many prescriptions, and each doctor can prescribe many medications. The ``Prescription`` table,  includes the patient ID, staff ID, dosage, prescriptionID, expiration, etc.
+
+When checking into the clinic, each patient provides their insurance information. Each patient has one insurance provider, and each insurance provider has a single policy per patient. The ``InsuranceProviders`` table contains information about each insurance provider, such as the insurance ID, policy number, and provider name.
+
+The next crucial entity in the model is ``Appointment``, which is another result of a many-to-many relationship between Employee and Patient. The Appointment table contains the time, date, staff ID, and patient ID associated with the appointment.
+
+Each appointment can have a varying amount of payments, which are tracked via the ``payments`` table. ``payments`` keeps track of the amount for a payment, payment type, invoice date, and any other attributes essential for a payment invoice. 
+
+Appointments also provide services to each patient. These services logged within the ``serviceForAppointment`` table, which is a result of a a many-to-many relationship with servicesProvided. ``serviceForAppointment`` houses information about what service was used during an appointment as well as what staff member and patient were involved. 
+
+``ServicesProvided`` contains important information about a particular service given during an appointment like the name of the service, its cost, its ID, etc. ServicesProvided then connects to ``Inventory`` to form ``itemForService``, which keeps track of what items within the inventory were used for a service. The ``inventory`` table keeps track of the name of equipment, the quantity in stock, the type of equipment, etc. 
+
+The ``employeeType`` table keep track of the types of employees through the type ID attributes as well as a description of their role. Each employee type can have a multitude of employee within it, but an employee can only belong to one type. The ``employee`` table contains information about an employee such as their name, ID, email, phone number, etc.
+
 ## Data Dictionary:
 
 ### Table: Appointment
