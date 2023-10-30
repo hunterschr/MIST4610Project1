@@ -17,6 +17,14 @@ Explanation of data model:
 Our model is based on the structure of an emergency healthcare clinic. 
 ## Data Dictionary:
 
+### Table: Appointment
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| medical staff_staffID  | Part of composite PK, unique ID identifying each medical staff   | VARCHAR | 5 | | Part of PK |
+| patient_patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | | Part of PK |
+| date  | Date of appointment  | DATETIME | | | |
+| time  | Time of appointment  | DATETIME | | | |
 
 ### Table: InsuranceProviders
 
