@@ -80,7 +80,7 @@ The ``employeeType`` table keep track of the types of employees through the type
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 6 | | PK |
 | medicationName | Name of medicine | VARCHAR | 45 | | |
-| prescriptionDate | Date of filling  | VARCHAR | 45 | | |
+| prescriptionDate | Date of filling  | VARCHAR | 8 | | |
 | dosage | # of milligrams  | VARCHAR | 2 | | |
 | pharmacyLocation | Location of filling| VARCHAR | 45 | | |
 
