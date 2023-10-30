@@ -84,6 +84,15 @@ The ``employeeType`` table keep track of the types of employees through the type
 | dosage | # of milligrams  | VARCHAR | 2 | | |
 | pharmacyLocation | Location of filling| VARCHAR | 45 | | |
 
+### Table: Inventory
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| inventoryID  | PK, unique ID identifying the different equipments   | VARCHAR | 5 | | PK |
+| equipmentName  | Name of Equipment  | VARCHAR | 45 | | |
+| equipmentType  | Branch of Medicine associated with equipment  | VARCHAR | 45 | | |
+| quantityInStock  | Number of the equipment remaining  | INT | | | |
+
 ## Queries:
 
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
