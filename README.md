@@ -78,17 +78,21 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | quantityInStock  | Number of the equipment remaining  | INT | | | |
 
 
-### Table: medicalRecords
+### Table: Payments
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| recordID  | PK, The unique identifier for each patient’s medical record   | VARCHAR | 5 | | PK |
-| description | The description of the patient’s medical history | VARCHAR | 200 | 
-| diagnosis |  The diagnosis that the medical staff made for the patient | VARCHAR | 100 | | |
-| treatment  | The type of treatment given for one instance  | VARCHAR | 200 | | |
-| tests |  Type of lab work or tests given to patient | VARCHAR | 200| | |
-| prescription | Any type of medicine that has been or is currently prescribed to the patient | VARCHAR | 45| | |
-| patientID | The patient linked to the individual medical record  | VARCHAR |5 | |FK |
+| paymentID  | PK, Primary key for payments table   | VARCHAR | 5 | | PK |
+| amount | The total payment amount | INT | | 
+| paymentNumber | The credit card number on file | VARCHAR | 45 | | |
+| insurancePayment  | How much the insurance company pays out of the total payment  | VARCHAR | 45 | | |
+| patientPayment | How much the Patient pays out of pocket for the total payment | VARCHAR | 45| | |
+| invoiceDate | Date the charge was made | DATETIME ||||
+| paymentDate | Date the payment was processed and completed | DATETIME ||||
+| staffID |The staff who will be paid from this action  | VARCHAR |5||FK|
+| paymentID | The Patient who will be making the payment  | VARCHAR |5||FK|
+| providerID | The Insurance provider who will be making the payment  | VARCHAR|5||FK|
+
 
 ### Table: ServicesProvided
 
