@@ -10,7 +10,7 @@
 #### 4. Aidan Davies [@aidan.davies@uga.edu](https://github.com/AidanDavies117)
 
 ## Problem Description:
-We are tasked with modeling and building a relational database for an emergency health clinic. The database will revolve around the ``patient`` and ``Appointment`` entities, with all other entities playing a critical role in one of the two. We will accurately model the relationships between entities, populate their attributes with sample data, and create working queries to adequately test our database's ability to provide the information our customer needs.
+We are tasked with modeling and building a relational database for an emergency health clinic. The database will revolve around the ``patient`` and ``Appointments`` entities, with all other entities playing a critical role in one of the two. We will accurately model the relationships between entities, populate their attributes with sample data, and create working queries to adequately test our database's ability to provide the information our customer needs.
 
 
 ## Data Model:
@@ -20,23 +20,23 @@ Our database model is based on the structure of an emergency healthcare clinic. 
 
 The first table that references the patient ID is the ``MedicalRecords`` table. Each patient has one medical record and each medical record belongs to one patient. The ``MedicalRecords`` table contains information such as the record ID, diagnosis, and test results.
 
-As each patient sees their assigned doctor they might be prescribed medications. The result of this relationship is the ``Prescription`` table. Each patient can have many prescriptions, and each doctor can prescribe many medications. The ``Prescription`` table,  includes the patient ID, staff ID, dosage, prescriptionID, expiration, etc.
+As each patient sees their assigned doctor they might be prescribed medications. The result of this relationship is the ``Prescriptions`` table. Each patient can have many prescriptions, and each doctor can prescribe many medications. The ``Prescriptions`` table,  includes the patient ID, staff ID, dosage, prescriptionID, expiration, etc.
 
 When checking into the clinic, each patient provides their insurance information. Each patient has one insurance provider, and each insurance provider has a single policy per patient. The ``InsuranceProviders`` table contains information about each insurance provider, such as the insurance ID, policy number, and provider name.
 
-The next crucial entity in the model is ``Appointment``, which is another result of a many-to-many relationship between Employee and Patient. The Appointment table contains the time, date, staff ID, and patient ID associated with the appointment.
+The next crucial entity in the model is ``Appointments``, which is another result of a many-to-many relationship between Employee and Patient. The ``Appointments`` table contains the time, date, staff ID, and patient ID associated with the appointment.
 
 Each appointment can have a varying amount of payments, which are tracked via the ``payments`` table. ``payments`` keeps track of the amount for a payment, payment type, invoice date, and any other attributes essential for a payment invoice. 
 
-Appointments also provide services to each patient. These services logged within the ``serviceForAppointment`` table, which is a result of a a many-to-many relationship with servicesProvided. ``serviceForAppointment`` houses information about what service was used during an appointment as well as what staff member and patient were involved. 
+Appointments also provide services to each patient. These services logged within the ``ServiceForAppointment`` table, which is a result of a a many-to-many relationship with servicesProvided. ``ServiceForAppointment`` houses information about what service was used during an appointment as well as what staff member and patient were involved. 
 
-``ServicesProvided`` contains important information about a particular service given during an appointment like the name of the service, its cost, its ID, etc. ServicesProvided then connects to ``Inventory`` to form ``itemForService``, which keeps track of what items within the inventory were used for a service. The ``inventory`` table keeps track of the name of equipment, the quantity in stock, the type of equipment, etc. 
+``ServicesProvided`` contains important information about a particular service given during an appointment like the name of the service, its cost, its ID, etc. ServicesProvided then connects to ``Inventory`` to form ``ItemForService``, which keeps track of what items within the inventory were used for a service. The ``Inventory`` table keeps track of the name of equipment, the quantity in stock, the type of equipment, etc. 
 
-The ``employeeType`` table keep track of the types of employees through the type ID attributes as well as a description of their role. Each employee type can have a multitude of employee within it, but an employee can only belong to one type. The ``employee`` table contains information about an employee such as their name, ID, email, phone number, etc.
+The ``EmployeeType`` table keep track of the types of employees through the type ID attributes as well as a description of their role. Each employee type can have a multitude of employee within it, but an employee can only belong to one type. The ``Employee`` table contains information about an employee such as their name, ID, email, phone number, etc.
 
 ## Data Dictionary:
 
-### Table: Appointment
+### Table: Appointments
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
@@ -45,7 +45,7 @@ The ``employeeType`` table keep track of the types of employees through the type
 | date  | Date of appointment  | DATETIME | | | |
 | time  | Time of appointment  | DATETIME | | | |
 
-### Table: employeeType
+### Table: EmployeeType
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
@@ -65,7 +65,7 @@ The ``employeeType`` table keep track of the types of employees through the type
 | insuranceRate  | Cost of insurance  | INT | | | |
 | patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | VARCHAR | 10 | | FK - Patient |
 
-### Table: servicesProvided
+### Table: ServicesProvided
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
@@ -75,7 +75,7 @@ The ``employeeType`` table keep track of the types of employees through the type
 | description  | Description of the service  | VARCHAR | 100 | | |
 | cost  | Cost of the service  | VARCHAR | 45 | | |
 
-### Table: Prescription
+### Table: Prescriptions
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 6 | | PK |
