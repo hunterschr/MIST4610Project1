@@ -58,30 +58,30 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
-| premium  | Amount paid each month  | INT | | | |
+| premium  | Amount paid each month  | INT | VARCHAR | 10 | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
 | providerPhone  | Phone number for insurance provider  | VARCHAR | 45 | | |
 | providerEmail  | Email for insurance provider  | VARCHAR | 45 | | |
-| insuranceRate  | Cost of insurance  | INT | | | |
+| insuranceRate  | Cost of insurance  | VARCHAR | 15 | | |
 | patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | VARCHAR | 10 | | FK - Patient |
 
 ### Table: ServicesProvided
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 5 | | PK |
+| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
 | serviceName  | Name of service  | VARCHAR | 45 | | |
 | department  | Department that handles the service  | VARCHAR | 45 | | |
-| description  | Description of the service  | VARCHAR | 100 | | |
-| cost  | Cost of the service  | VARCHAR | 45 | | |
+| description  | Description of the service  | VARCHAR | 45 | | |
+| cost  | Cost of the service  | VARCHAR | 10 | | |
 
 ### Table: Prescriptions
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 6 | | PK |
-| medicationName | Name of medicine | VARCHAR | 45 | | |
-| prescriptionDate | Date of filling  | DATE | 8 | | |
-| dosage | # of milligrams  | INT | 2 | | |
+| prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 45 | | PK |
+| prescriptionDate | Date of filling  | DATE |
+| prescriptionExpiration | Date it Expires | DATE |
+| dosage | # of milligrams  | VARCHAR | 45 | 
 | pharmacyLocation | Location of filling| VARCHAR | 45 | | |
 
 ### Table: Inventory
@@ -89,6 +89,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | inventoryID  | PK, unique ID identifying the different equipments   | VARCHAR | 5 | | PK |
+| equipmentID | # to determine equipment | VARCHAR | 45 | 
 | equipmentName  | Name of Equipment  | VARCHAR | 45 | | |
 | equipmentType  | Branch of Medicine associated with equipment  | VARCHAR | 45 | | |
 | quantityInStock  | Number of the equipment remaining  | INT | | | |
