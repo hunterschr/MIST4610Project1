@@ -49,21 +49,21 @@ The ``employeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| typeID  | PK, unique name identifying employee type   | VARCHAR | 5 | | PK |
+| typeID  | PK, unique name identifying employee type   | VARCHAR | 10 | | PK |
 | descriptionOfRole  | Description of the role for the employee type  | VARCHAR | 45 | | |
 
 ### Table: InsuranceProviders
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| insuranceID  | PK, unique number identifying insurance provider   | INT | | | PK |
+| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
-| coverage  | Coverage of policy  | VARCHAR | 45 | | |
+| premium  | Amount paid each month  | INT | | | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
 | providerPhone  | Phone number for insurance provider  | VARCHAR | 45 | | |
 | providerEmail  | Email for insurance provider  | VARCHAR | 45 | | |
 | insuranceRate  | Cost of insurance  | INT | | | |
-| patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | INT | | | FK - Patient |
+| patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | VARCHAR | 10 | | FK - Patient |
 
 ### Table: servicesProvided
 
