@@ -78,6 +78,17 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | quantityInStock  | Number of the equipment remaining  | INT | | | |
 
 
+
+### Table: ServicesProvided
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
+| serviceName  | Name of service  | VARCHAR | 45 | | |
+| department  | Department that handles the service  | VARCHAR | 45 | | |
+| description  | Description of the service  | VARCHAR | 45 | | |
+| cost  | Cost of the service  | VARCHAR | 10 | | |
+
 ### Table: Payments
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
@@ -93,16 +104,6 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | paymentID | The Patient who will be making the payment  | VARCHAR |5||FK|
 | providerID | The Insurance provider who will be making the payment  | VARCHAR|5||FK|
 
-
-### Table: ServicesProvided
-
-| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
-| ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
-| serviceName  | Name of service  | VARCHAR | 45 | | |
-| department  | Department that handles the service  | VARCHAR | 45 | | |
-| description  | Description of the service  | VARCHAR | 45 | | |
-| cost  | Cost of the service  | VARCHAR | 10 | | |
 
 ### Table: Prescriptions
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
