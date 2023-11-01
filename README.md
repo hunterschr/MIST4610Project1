@@ -149,7 +149,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 ![A2E0DB8D-A542-4F5E-B637-92CCF3FB0378](https://github.com/hunterschr/MIST4610Project1/assets/148145159/6829d7dc-f260-4d25-ab4a-607ee37ab235)
 
 
-  This query allows staff at the clinic to view how many patients at the hospital are insured by a specific insurance provider. For example, Humana currently insures 5 patients and Anthem insures 17. This makes it easier ot staff to tell which provider is most widely used among patients, and can determine future contractd with these providers. 
+  This query allows staff at the clinic to view how many patients at the hospital are insured by a specific insurance provider. For example, Humana currently insures 5 patients and Anthem insures 17. This makes it easier ot staff to tell which provider is most widely used among patients, and can determine future contracts with these providers. 
 
   
  ### Query 4:
