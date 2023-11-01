@@ -144,7 +144,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
   This query can be used to identify patterns in diagnoses based on age, which can be used to improve patient care and develop more effective treatment plans. 
 
   ### Query 3:
-  Query 3 lists out the number of patients per each Insurance Provider. 
+  Query 3 lists out the number of patients who are insured by a certain Insurance Provider. 
 
 ![A2E0DB8D-A542-4F5E-B637-92CCF3FB0378](https://github.com/hunterschr/MIST4610Project1/assets/148145159/6829d7dc-f260-4d25-ab4a-607ee37ab235)
 
@@ -153,11 +153,11 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
   
  ### Query 4:
-  Query 4 lists out the names of patients who do not require surgery. 
+  Query 4 lists out the names of patients who have never required surgery. 
   
 ![D39F3891-9D25-4BE2-9769-2EC23991393F](https://github.com/hunterschr/MIST4610Project1/assets/148145159/e5710c7b-95a8-4db9-a74f-f6cad400cf3e)
 
 
-  This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majortiy of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past. 
+  This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majority of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past. 
 
 ## Database Information:
