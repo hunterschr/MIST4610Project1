@@ -118,11 +118,11 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
 | Multiple table join  | X |  |  |  |  |  |  |  |  |  |
 | Subquery  |  |  |  |  |  |  |  |  |  |  |
-| GROUP BY  |  |  |  |  |  |  |  |  |  |  |
+| GROUP BY  |  |  | X |  |  |  |  |  |  |  |
 | GROUP BY with HAVING  |  |  |  |  |  |  |  |  |  |  |
 | Multi conditional WHERE  | X |  |  |  |  |  |  |  |  |  |
 | Built in functions  | X |  |  |  |  |  |  |  |  |  |
-| REGEXP  |  |  |  |  |  |  |  |  |  |  |
+| REGEXP  |  |  | X |  |  |  |  |  |  |  |
 | NOT EXISTS  |  |  |  |  |  |  |  |  |  |  |
 
 ### Query 1:
@@ -132,5 +132,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
   This query allows staff at the clinic to view the names of all patients that have come in within the past year, as well as their diagnosis. This query will help the clinic track trends in disease incidence and prevalence, which can help them allocate resources more effectively and identify patients who may need preventive care. 
+
+  ### Query 3:
+  Query 3 lists out the number of patients per each Insurance Provider. 
+
+![093379E5-B187-4245-AA76-766F39446B26](https://github.com/hunterschr/MIST4610Project1/assets/148145159/b79af2a4-813b-499c-98be-e32ca9142da6)
+
+
+  This query allows staff at the clinic to view how many patients at the hospital are insured by a specific insurance provider. For example, Humana currently insures 5 patients and Anthem insures 17. This makes it easier ot staff to tell which provider is most widely used among patients, and can determine future contractd with these providers. 
 
 ## Database Information:
