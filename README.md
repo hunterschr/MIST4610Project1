@@ -120,13 +120,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
 | Multiple table join  | X |  |  |  |  |  |  |  |  |  |
-| Subquery  |  |  |  |  |  |  |  |  |  |  |
+| Subquery  |  |  |  | X |  |  |  |  |  |  |
 | GROUP BY  |  |  | X |  |  |  |  |  |  |  |
 | GROUP BY with HAVING  |  |  |  |  |  |  |  |  |  |  |
-| Multi conditional WHERE  | X |  |  |  |  |  |  |  |  |  |
+| Multi conditional WHERE  | X |  |X  |  |  |  |  |  |  |  |
 | Built in functions  | X |  |  |  |  |  |  |  |  |  |
-| REGEXP  |  |  | X |  |  |  |  |  |  |  |
-| NOT EXISTS  |  |  |  |  |  |  |  |  |  |  |
+| REGEXP  |  |  | X | X |  |  |  |  |  |  |
+| NOT EXISTS  |  |  |  | X |  |  |  |  |  |  |
 
 ### Query 1:
   Query 1 lists out the patient names and their diagnosis for any patients seen at the clinic within the last year. The results are ordered by diagnosis.
@@ -143,5 +143,14 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
   This query allows staff at the clinic to view how many patients at the hospital are insured by a specific insurance provider. For example, Humana currently insures 5 patients and Anthem insures 17. This makes it easier ot staff to tell which provider is most widely used among patients, and can determine future contractd with these providers. 
+
+  
+ ### Query 4:
+  Query 4 lists out the names of patients who do not require surgery. 
+  
+![E1E37ED6-E38C-4545-8D40-C41019A4D4CF](https://github.com/hunterschr/MIST4610Project1/assets/148145159/e68b7423-c68f-4c56-a60d-c02084d39e1c)
+
+
+  This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majortiy of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past. 
 
 ## Database Information:
