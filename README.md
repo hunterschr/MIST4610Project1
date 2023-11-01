@@ -146,7 +146,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
   ### Query 3:
   Query 3 lists out the number of patients per each Insurance Provider. 
 
-![093379E5-B187-4245-AA76-766F39446B26](https://github.com/hunterschr/MIST4610Project1/assets/148145159/b79af2a4-813b-499c-98be-e32ca9142da6)
+![A2E0DB8D-A542-4F5E-B637-92CCF3FB0378](https://github.com/hunterschr/MIST4610Project1/assets/148145159/6829d7dc-f260-4d25-ab4a-607ee37ab235)
 
 
   This query allows staff at the clinic to view how many patients at the hospital are insured by a specific insurance provider. For example, Humana currently insures 5 patients and Anthem insures 17. This makes it easier ot staff to tell which provider is most widely used among patients, and can determine future contractd with these providers. 
@@ -155,7 +155,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
  ### Query 4:
   Query 4 lists out the names of patients who do not require surgery. 
   
-![E1E37ED6-E38C-4545-8D40-C41019A4D4CF](https://github.com/hunterschr/MIST4610Project1/assets/148145159/e68b7423-c68f-4c56-a60d-c02084d39e1c)
+![D39F3891-9D25-4BE2-9769-2EC23991393F](https://github.com/hunterschr/MIST4610Project1/assets/148145159/e5710c7b-95a8-4db9-a74f-f6cad400cf3e)
 
 
   This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majortiy of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past. 
