@@ -116,13 +116,21 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
-| Multiple table join  |  |  |  |  |  |  |  |  |  |  |
+| Multiple table join  | X |  |  |  |  |  |  |  |  |  |
 | Subquery  |  |  |  |  |  |  |  |  |  |  |
 | GROUP BY  |  |  |  |  |  |  |  |  |  |  |
 | GROUP BY with HAVING  |  |  |  |  |  |  |  |  |  |  |
-| Multi conditional WHERE  |  |  |  |  |  |  |  |  |  |  |
-| Built in functions  |  |  |  |  |  |  |  |  |  |  |
+| Multi conditional WHERE  | X |  |  |  |  |  |  |  |  |  |
+| Built in functions  | X |  |  |  |  |  |  |  |  |  |
 | REGEXP  |  |  |  |  |  |  |  |  |  |  |
 | NOT EXISTS  |  |  |  |  |  |  |  |  |  |  |
+
+### Query 1:
+  Query 1 lists out the patient names and their diagnosis for any patients seen at the clinic within the last year. The results are ordered by diagnosis.
+
+<img width="600" alt="Screenshot 2023-11-01 at 12 30 05 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/105222813/40e9e6e1-905c-4507-a763-0c6e5ebbdb12">
+
+
+  This query allows staff at the clinic to view the names of all patients that have come in within the past year, as well as their diagnosis. This query will help the clinic track trends in disease incidence and prevalence, which can help them allocate resources more effectively and identify patients who may need preventive care. 
 
 ## Database Information:
