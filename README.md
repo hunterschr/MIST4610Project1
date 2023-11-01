@@ -121,10 +121,10 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
 | Multiple table join  | X |  |  |  |  |  |  |  |  |  |
 | Subquery  |  |  |  | X |  |  |  |  |  |  |
-| GROUP BY  |  |  | X |  |  |  |  |  |  |  |
+| GROUP BY  |  | X | X |  |  |  |  |  |  |  |
 | GROUP BY with HAVING  |  |  |  |  |  |  |  |  |  |  |
 | Multi conditional WHERE  | X |  |X  |  |  |  |  |  |  |  |
-| Built in functions  | X |  |  |  |  |  |  |  |  |  |
+| Built in functions  | X | X |  |  |  |  |  |  |  |  |
 | REGEXP  |  |  | X | X |  |  |  |  |  |  |
 | NOT EXISTS  |  |  |  | X |  |  |  |  |  |  |
 
@@ -135,6 +135,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
   This query allows staff at the clinic to view the names of all patients that have come in within the past year, as well as their diagnosis. This query will help the clinic track trends in disease incidence and prevalence, which can help them allocate resources more effectively and identify patients who may need preventive care. 
+
+### Query 2:
+  Query 2 lists out the average age of patients with particular diagnoses.
+
+![image](https://github.com/hunterschr/MIST4610Project1/assets/105222813/64a7a393-46ef-49e5-aadc-e669575d475f)
+
+  This query can be used to identify patterns in diagnoses based on age, which can be used to improve patient care and develop more effective treatment plans. 
 
   ### Query 3:
   Query 3 lists out the number of patients per each Insurance Provider. 
