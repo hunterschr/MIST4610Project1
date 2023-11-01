@@ -11,23 +11,23 @@
 #### 5. Lauren Prisock [@laurenPrisock](https://github.com/laurenPrisock)
 
 ## Problem Description:
-We are tasked with modeling and building a relational database for an emergency health clinic. The database will revolve around the ``patient`` and ``Appointments`` entities, with all other entities playing a critical role in one of the two. We will accurately model the relationships between entities, populate their attributes with sample data, and create working queries to adequately test our database's ability to provide the information our customer needs.
+We are tasked with modeling and building a relational database for an emergency health clinic. The database will revolve around the ``Patient`` and ``Appointments`` entities, with all other entities playing a critical role in one of the two. We will accurately model the relationships between entities, populate their attributes with sample data, and create working queries to adequately test our database's ability to provide the information our customer needs.
 
 
 ## Data Model:
 Explanation of data model:
 
-Our database model is based on the structure of an emergency healthcare clinic. The central entity in the model is the ``patient`` table, which contains important information about all patients who visit the clinic, such as their patient ID, phone number, email, and date of birth. The patient's ID is used as the primary identifier for patients throughout the database, so it is referenced in many other tables.
+Our database model is based on the structure of an emergency healthcare clinic. The central entity in the model is the ``Patient`` table, which contains important information about all patients who visit the clinic, such as their patient ID, phone number, email, and date of birth. The patient's ID is used as the primary identifier for patients throughout the database, so it is referenced in many other tables.
 
 The first table that references the patient ID is the ``MedicalRecords`` table. Each patient has one medical record and each medical record belongs to one patient. The ``MedicalRecords`` table contains information such as the record ID, diagnosis, and test results.
 
 As each patient sees their assigned doctor they might be prescribed medications. The result of this relationship is the ``Prescriptions`` table. Each patient can have many prescriptions, and each doctor can prescribe many medications. The ``Prescriptions`` table,  includes the patient ID, staff ID, dosage, prescriptionID, expiration, etc.
 
-When checking into the clinic, each patient provides their insurance information. Each patient has one insurance provider, and each insurance provider has a single policy per patient. The ``InsuranceProviders`` table contains information about each insurance provider, such as the insurance ID, policy number, and provider name.
+When checking into the clinic, each patient provides their insurance information. Each patient has one insurance provider, and each insurance provider has a single policy per patient. The ``Insurance`` table contains information about each insurance provider, such as the insurance ID, policy number, and provider name.
 
 The next crucial entity in the model is ``Appointments``, which is another result of a many-to-many relationship between Employee and Patient. The ``Appointments`` table contains the time, date, staff ID, and patient ID associated with the appointment.
 
-Each appointment can have a varying amount of payments, which are tracked via the ``payments`` table. ``payments`` keeps track of the amount for a payment, payment type, invoice date, and any other attributes essential for a payment invoice. 
+Each appointment can have a varying amount of payments, which are tracked via the ``Payments`` table. ``Payments`` keeps track of the amount for a payment, payment type, invoice date, and any other attributes essential for a payment invoice. 
 
 Appointments also provide services to each patient. These services logged within the ``ServiceForAppointment`` table, which is a result of a a many-to-many relationship with servicesProvided. ``ServiceForAppointment`` houses information about what service was used during an appointment as well as what staff member and patient were involved. 
 
@@ -51,20 +51,17 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | typeID  | PK, unique name identifying employee type   | VARCHAR | 10 | | PK |
-| descriptionOfRole  | Description of the role for the employee type  | VARCHAR | 45 | | |
+| roleDescription  | Description of the role for the employee type  | VARCHAR | 45 | | |
 
-### Table: InsuranceProviders
+### Table: Insurance
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
-| premium  | Amount paid each month  | INT | VARCHAR | 10 | |
+| coverage  | Amount paid each month  | VARCHAR | 45 | | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
 | providerPhone  | Phone number for insurance provider  | VARCHAR | 45 | | |
-| providerEmail  | Email for insurance provider  | VARCHAR | 45 | | |
-| insuranceRate  | Cost of insurance  | VARCHAR | 15 | | |
-| patient_patientID  | FK - Patient, specifies ID of patient attached to insurance policy  | VARCHAR | 10 | | FK - Patient |
 
 
 ### Table: Inventory
