@@ -54,7 +54,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| staffID  | PK, Primary key for medical staff  | VARCHAR | 10 | | PK |
+| staffID  | PK, Primary key for medical staff  | INT | 10 | | PK |
 | staffName | The first and last name of the employee | VARCHAR |45 | |
 | staffPhone | The phone number of the employee | VARCHAR | 45 | | |
 | staffEmail  | The email address of the employee  | VARCHAR | 45 | | |
@@ -142,6 +142,8 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 ### Table: Prescriptions
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| staffID | FK, the staff member who ordered prescription filled | INT |  | | FK |
+| patientID | FK, patient who recieved prescription   | VARCHAR | 45 | | FK |
 | prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 45 | | PK |
 | prescriptionDate | Date of filling  | DATE |
 | prescriptionExpiration | Date it Expires | DATE |
