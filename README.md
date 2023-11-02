@@ -35,7 +35,7 @@ Appointments also provide services to each patient. These services logged within
 
 The ``EmployeeType`` table keep track of the types of employees through the type ID attributes as well as a description of their role. Each employee type can have a multitude of employee within it, but an employee can only belong to one type. The ``Employee`` table contains information about an employee such as their name, ID, email, phone number, etc.
 
-<img width="1209" alt="Screenshot 2023-11-01 at 4 01 05 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/105222813/9344a4ee-8546-4a19-9f8b-b3b28f95058b">
+![image](https://github.com/hunterschr/MIST4610Project1/assets/105222813/bbbc7ff3-d784-4714-9583-14861512fd38)
 
 
 ## Data Dictionary:
