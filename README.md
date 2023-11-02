@@ -49,6 +49,22 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | date  | Date of appointment  | DATETIME | | | |
 | time  | Time of appointment  | DATETIME | | | |
 
+
+### Table: Employee
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| staffID  | PK, Primary key for medical staff  | VARCHAR | 10 | | PK |
+| staffName | The first and last name of the employee | VARCHAR |45 | |
+| staffPhone | The phone number of the employee | VARCHAR | 45 | | |
+| staffEmail  | The email address of the employee  | VARCHAR | 45 | | |
+| specialization | The area of medicine the employee specializes in | VARCHAR | 45| | |
+| shiftSchedule | The time of day the employee usually works | VARCHAR|45|||
+| credentials | The highest level of medical recognition for the employee | VARCHAR|45|||
+| salary |The annual salary of the employee  | VARCHAR |45|||
+| typeID | The type of employee they are  | VARCHAR |10||FK|
+
+
 ### Table: EmployeeType
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
