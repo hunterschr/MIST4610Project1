@@ -44,9 +44,8 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| staffID  | Part of composite PK, unique ID identifying each medical staff   | VARCHAR | 5 | | Part of PK |
-| patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | | Part of PK |
-| date  | Date of appointment  | DATETIME | | | |
+| staffID  | Part of composite PK, unique ID identifying each medical staff   | VARCHAR | 5 | 1| Part of PK |
+| patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | P##| Part of PK |
 | time  | Time of appointment  | DATETIME | | | |
 
 
@@ -54,7 +53,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| staffID  | PK, Primary key for medical staff  | INT | 10 | | PK |
+| staffID  | PK, Primary key for medical staff  | INT | 10 | 1| PK |
 | staffName | The first and last name of the employee | VARCHAR |45 | |
 | staffPhone | The phone number of the employee | VARCHAR | 45 | | |
 | staffEmail  | The email address of the employee  | VARCHAR | 45 | | |
@@ -76,7 +75,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
+| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 |IN## | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
 | coverage  | Amount paid each month  | VARCHAR | 45 | | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
