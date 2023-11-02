@@ -44,8 +44,8 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| medical staff_staffID  | Part of composite PK, unique ID identifying each medical staff   | VARCHAR | 5 | | Part of PK |
-| patient_patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | | Part of PK |
+| staffID  | Part of composite PK, unique ID identifying each medical staff   | VARCHAR | 5 | | Part of PK |
+| patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | | Part of PK |
 | date  | Date of appointment  | DATETIME | | | |
 | time  | Time of appointment  | DATETIME | | | |
 
@@ -93,6 +93,18 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | equipmentType  | Branch of Medicine associated with equipment  | VARCHAR | 45 | | |
 | quantityInStock  | Number of the equipment remaining  | INT | | | |
 
+
+### Table: medicalRecords
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| recordID  | PK, The unique identifier for each patient’s medical record   | VARCHAR | 45 | | PK |
+| description | The description of the patient’s medical history | VARCHAR | 200 | 
+| diagnosis  | The diagnosis that the medical staff made for the patient  | VARCHAR | 100 | | |
+| treatment  | The type of treatment given for one instance  | VARCHAR | 200 | | |
+| testResults | Any type of test given to the patient  | varchar | 200| | |
+| prescription  | Ant type of medicine that has been or is currently prescribed to the patient  | VARCHAR | 45 | | |
+| patientID  | The patient linked to the individual medical record | VARCHAR | 5| | |
 
 
 ### Table: Patients
