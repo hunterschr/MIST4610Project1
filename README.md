@@ -79,15 +79,21 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
 
-### Table: ServicesProvided
+### Table: Patients
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
-| serviceName  | Name of service  | VARCHAR | 45 | | |
-| department  | Department that handles the service  | VARCHAR | 45 | | |
-| description  | Description of the service  | VARCHAR | 45 | | |
-| cost  | Cost of the service  | VARCHAR | 10 | | |
+| patientID  | PK, Primary key for patient   | VARCHAR | 10 | | PK |
+| patientName | The first and last name of the patient | VARCHAR |45 | |
+| patientPhone | The phone number of the patient | VARCHAR | 45 | | |
+| patientEmail  | The email address of the patient  | VARCHAR | 45 | | |
+| patientAddress | The home address of the patient | VARCHAR | 45| | |
+| doB | The date of birth of the patient | DATETIME ||||
+| emergencyContactName | The first and last name of the emergency contact for the patient | VARCHAR|45|||
+| emergencyContactPhone |The phone numbeer of the emergency contact for the patient  | VARCHAR |45|||
+| insuranceID | The insurance provider of the patient  | VARCHAR |10||FK|
+
+
 
 ### Table: Payments
 
@@ -113,6 +119,16 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | prescriptionExpiration | Date it Expires | DATE |
 | dosage | # of milligrams  | VARCHAR | 45 | 
 | pharmacyLocation | Location of filling| VARCHAR | 45 | | |
+
+### Table: ServicesProvided
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
+| serviceName  | Name of service  | VARCHAR | 45 | | |
+| department  | Department that handles the service  | VARCHAR | 45 | | |
+| description  | Description of the service  | VARCHAR | 45 | | |
+| cost  | Cost of the service  | VARCHAR | 10 | | |
 
 
 ## Queries:
