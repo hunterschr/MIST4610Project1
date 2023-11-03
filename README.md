@@ -9,6 +9,7 @@
 #### 3. Shweta Sainathan [@ShwetaSainathan](https://github.com/ShwetaSainathan)
 #### 4. Aidan Davies [@aidan.davies@uga.edu](https://github.com/AidanDavies117)
 #### 5. Lauren Prisock [@laurenPrisock](https://github.com/laurenPrisock)
+#### 6. Sohum Rane [@srane05](https://github.com/srane05)
 
 ## Problem Description:
 We are tasked with modeling and building a relational database for an emergency health clinic. The database will revolve around the ``Patient`` and ``Appointments`` entities, with all other entities playing a critical role in one of the two. We will accurately model the relationships between entities, populate their attributes with sample data, and create working queries to adequately test our database's ability to provide the information our customer needs.
