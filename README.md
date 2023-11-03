@@ -217,12 +217,12 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
    ### Query 6:
-  Query 6 lists out the job in the hospital with an average salary that is greater than the average of all salaries for employees at the hospital. 
+  Query 6 lists out the staff at the hospital that are on call and their id, name, phone number, and credentials. The query is filtered by the input, which is the credential that is being searched for. 
   
 <img width="930" alt="Screenshot 2023-11-03 at 9 47 08 AM" src="https://github.com/hunterschr/MIST4610Project1/assets/148081356/b6e5fd58-2f3d-42f8-a8ed-4583f85f85ce">
 
 
-  This query allows for identification of which job/jobs are higher paid than the average employee at the hospital and what the average salary looks loke for that job or those jobs. This information is useful as it is an important data point that the hospital can leverage as they hire new employees, promote existing employees, and plan their budget for salaries. This data point also allows the hospital to quantify their investment in highly-paid talent, which can be used as a reference for their future planning.
+  This query allows for hospital management and administration to quicky identify the medical staff that is on call and available to be called in. The contact information, the staff's phone number, is the crucial piece of information necessary to call them in. Their ID, name, and credentials are also displayed. The query is filtered by the input which is the credential of the staff. This speeds up the process of finding the right people to call in. Management can directly ask for an MD (Doctor), RN (Nurse), LPN (Licensed Practical Nurse), or PharmD (Pharmacist) and can view who among the credential they searched for matches the credential and what their contact information is in order to be called in.
 
 ### Query 7
   Query 7 lists out the name of the doctor, their specialization, and the number of patients they had an appointment with.
