@@ -111,7 +111,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| patientID  | PK, Primary key for patient   | VARCHAR | 10 | | PK |
+| patientID  | PK, Primary key for patient   | VARCHAR | 10 | P## | PK |
 | patientName | The first and last name of the patient | VARCHAR |45 | |
 | patientPhone | The phone number of the patient | VARCHAR | 45 | | |
 | patientEmail  | The email address of the patient  | VARCHAR | 45 | | |
