@@ -237,6 +237,14 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 ![image](https://github.com/hunterschr/MIST4610Project1/assets/148078185/3e46d192-0a19-4bc2-8b51-2c93eef8a451)
 
   This query allows for a comparison of the different types of employees working at the clinic currently. As a result, the administrative staff can reference this query before making any new hires, when considering to downsize, and it helps administrative staff to determine which employees are more needed than others as well.
+
+### Query 10
+  Query 8 lists out the different services and the number of appointments In which each service was provided.
+  
+<img width="754" alt="Screenshot 2023-11-03 at 1 05 49 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/148081620/eb1a2133-e6e1-43ec-b4d3-fc6bff6aea87">
+
+  This query allows staff members to compare which procedures are the most common and uncommon. This information can help the hospital understand where inventory is moving around, which departments of the hospital have the most patients and highest traffic, and which services are more of a priority to the hospital/core to the hospital's main focuses.
+
   
 ## Database Information:
 Name of the database: ns_F2329704Group3
