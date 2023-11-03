@@ -224,6 +224,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
   This query allows for identification of which job/jobs are higher paid than the average employee at the hospital and what the average salary looks loke for that job or those jobs. This information is useful as it is an important data point that the hospital can leverage as they hire new employees, promote existing employees, and plan their budget for salaries. This data point also allows the hospital to quantify their investment in highly-paid talent, which can be used as a reference for their future planning.
 
+### Query 7
+  Query 7 lists out the name of the doctor, their specialization, and the number of patients they had an appointment with.
+
+![image](https://github.com/hunterschr/MIST4610Project1/assets/148078185/20bfde52-e3c6-4d25-94a3-b854085fa36f)
+
+  This query allows for staff to compare the number of patients each doctor had an appointment with. This query also helps to recognize which departments are treating a high volume of patients compared to other departments, which would let the administrative staff allocate the proper funding and resources to the departments that need it. On the other hand, this query would also help determine which departments and doctors are not meeting patient or appointment expectations.
+  
 ## Database Information:
 Name of the database: ns_F2329704Group3
 
