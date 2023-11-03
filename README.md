@@ -207,12 +207,12 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 
  ### Query 5:
-  Query 5 lists out the names of patients who have never required surgery. 
+  Query 5 lists out the job in the hospital with an average salary that is greater than the average of all salaries for employees at the hospital. 
   
 <img width="804" alt="Screenshot 2023-11-02 at 10 44 57 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/148081356/4a2a4d3b-4993-42ed-814d-db82d0b9aea1">
 
 
-  This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majority of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past.
+  This query allows for identification of which job/jobs are higher paid than the average employee at the hospital and what the average salary looks loke for that job or those jobs. This information is useful as it is an important data point that the hospital can leverage as they hire new employees, promote existing employees, and plan their budget for salaries. This data point also allows the hospital to quantify their investment in highly-paid talent, which can be used as a reference for their future planning.
 
 ## Database Information:
 Name of the database: ns_F2329704Group3
