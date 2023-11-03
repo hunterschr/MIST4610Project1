@@ -205,6 +205,15 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
   This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majority of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past. 
 
+
+ ### Query 5:
+  Query 5 lists out the names of patients who have never required surgery. 
+  
+<img width="804" alt="Screenshot 2023-11-02 at 10 44 57 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/148081356/4a2a4d3b-4993-42ed-814d-db82d0b9aea1">
+
+
+  This query allows staff at the clinic to view which patients have never needed any type of surgery. This query will help determine those who come in to the clinic for regular check-ups and therefore, have a history of being generally healthy. Surgery is very intensive, and requires an additional medical staff member (surgeon), only a few patients will need this type of care. The majority of patients will not fall under this category, so the clinic can determine who those patients are through this query. Additionally, the clinic could insert an EXISTS clause to determine which patients have needed surery in the past.
+
 ## Database Information:
 Name of the database: ns_F2329704Group3
 
