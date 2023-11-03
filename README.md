@@ -165,11 +165,11 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
 | Multiple table join  | X |  |  |  |  |  |  |  |  |  |
-| Subquery  |  |  |  | X |  |  |  |  |  |  |
+| Subquery  |  |  |  | X | X |  |  |  |  |  |
 | GROUP BY  |  | X | X |  |  |  |  |  |  |  |
-| GROUP BY with HAVING  |  |  |  |  |  |  |  |  |  |  |
+| GROUP BY with HAVING  |  |  |  |  | X |  |  |  |  |  |
 | Multi conditional WHERE  | X |  |X  |  |  |  |  |  |  |  |
-| Built in functions  | X | X |  |  |  |  |  |  |  |  |
+| Built in functions  | X | X |  |  | X |  |  |  |  |  |
 | REGEXP  |  |  | X | X |  |  |  |  |  |  |
 | NOT EXISTS  |  |  |  | X |  |  |  |  |  |  |
 
