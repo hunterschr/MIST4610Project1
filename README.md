@@ -239,7 +239,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
   This query allows for a comparison of the different types of employees working at the clinic currently. As a result, the administrative staff can reference this query before making any new hires, when considering to downsize, and it helps administrative staff to determine which employees are more needed than others as well.
 
 ### Query 10
-  Query 8 lists out the different services and the number of appointments In which each service was provided.
+  Query 10 lists out the different services and the number of appointments In which each service was provided.
   
 <img width="754" alt="Screenshot 2023-11-03 at 1 05 49 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/148081620/eb1a2133-e6e1-43ec-b4d3-fc6bff6aea87">
 
