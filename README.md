@@ -76,7 +76,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
+| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 |in## | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
 | coverage  | Amount paid each month  | VARCHAR | 45 | | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
@@ -87,7 +87,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| inventoryID  | PK, unique ID identifying the different equipments   | VARCHAR | 5 | | PK |
+| inventoryID  | PK, unique ID identifying the different equipments   | VARCHAR | 5 | i##| PK |
 | equipmentID | # to determine equipment | VARCHAR | 45 | 
 | equipmentName  | Name of Equipment  | VARCHAR | 45 | | |
 | equipmentType  | Branch of Medicine associated with equipment  | VARCHAR | 45 | | |
@@ -105,13 +105,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| recordID  | PK, The unique identifier for each patient’s medical record   | VARCHAR | 45 | | PK |
+| recordID  | PK, The unique identifier for each patient’s medical record   | VARCHAR | 45 |R## | PK |
 | description | The description of the patient’s medical history | VARCHAR | 200 | 
 | diagnosis  | The diagnosis that the medical staff made for the patient  | VARCHAR | 100 | | |
 | treatment  | The type of treatment given for one instance  | VARCHAR | 200 | | |
 | testResults | Any type of test given to the patient  | varchar | 200| | |
 | prescription  | Ant type of medicine that has been or is currently prescribed to the patient  | VARCHAR | 45 | | |
-| patientID  | The patient linked to the individual medical record | VARCHAR | 5| | |
+| patientID  | The patient linked to the individual medical record | VARCHAR | 5|P## | |
 
 
 ### Table: Patients
@@ -126,7 +126,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | doB | The date of birth of the patient | DATETIME ||||
 | emergencyContactName | The first and last name of the emergency contact for the patient | VARCHAR|45|||
 | emergencyContactPhone |The phone numbeer of the emergency contact for the patient  | VARCHAR |45|||
-| insuranceID | The insurance provider of the patient  | VARCHAR |10||FK|
+| insuranceID | The insurance provider of the patient  | VARCHAR |10|in##|FK|
 
 
 
@@ -134,24 +134,24 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| paymentID  | PK, Primary key for payments table   | VARCHAR | 5 | | PK |
+| paymentID  | PK, Primary key for payments table   | VARCHAR | 5 |PM## | PK |
 | amount | The total payment amount | INT | | 
 | paymentNumber | The credit card number on file | VARCHAR | 45 | | |
 | insurancePayment  | How much the insurance company pays out of the total payment  | VARCHAR | 45 | | |
 | patientPayment | How much the Patient pays out of pocket for the total payment | VARCHAR | 45| | |
 | invoiceDate | Date the charge was made | DATETIME ||||
 | paymentDate | Date the payment was processed and completed | DATETIME ||||
-| staffID |The staff who will be paid from this action  | VARCHAR |5||FK|
-| paymentID | The Patient who will be making the payment  | VARCHAR |5||FK|
-| providerID | The Insurance provider who will be making the payment  | VARCHAR|5||FK|
+| staffID |The staff who will be paid from this action  | VARCHAR |5|1|FK|
+| patientID | The Patient who will be making the payment  | VARCHAR |5|P##|FK|
+| providerID | The Insurance provider who will be making the payment  | VARCHAR|5|in##|FK|
 
 
 ### Table: Prescriptions
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| staffID | FK, the staff member who ordered prescription filled | INT |  | | FK |
-| patientID | FK, patient who recieved prescription   | VARCHAR | 45 | | FK |
-| prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 45 | | PK |
+| staffID | FK, the staff member who ordered prescription filled | INT |  |1 | FK |
+| patientID | FK, patient who recieved prescription   | VARCHAR | 45 | P##| FK |
+| prescriptionID | PK, unique ID identifying each prescription   | VARCHAR | 45 |PR## | PK |
 | prescriptionDate | Date of filling  | DATE |
 | prescriptionExpiration | Date it Expires | DATE |
 | dosage | # of milligrams  | VARCHAR | 45 | 
@@ -161,15 +161,15 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| staffID   | PK, unique ID identifying the staff member   | INT | | | PK - part of whole |
-| patientID | PK, unique ID identifying the patient | VARCHAR | 10 | | PK - part of whole |
-| serviceID | PK, unique ID identifying the service | VARCHAR | 45 | | PK - part of whole |
+| staffID   | PK, unique ID identifying the staff member   | INT | |1 | PK - part of whole |
+| patientID | PK, unique ID identifying the patient | VARCHAR | 10 |P## | PK - part of whole |
+| serviceID | PK, unique ID identifying the service | VARCHAR | 45 |S## | PK - part of whole |
 
 ### Table: ServicesProvided
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 | | PK |
+| serviceID  | PK, unique ID identifying each service provided   | VARCHAR | 45 |S## | PK |
 | serviceName  | Name of service  | VARCHAR | 45 | | |
 | department  | Department that handles the service  | VARCHAR | 45 | | |
 | description  | Description of the service  | VARCHAR | 45 | | |
