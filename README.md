@@ -46,7 +46,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
 | staffID  | Part of composite PK, unique ID identifying each medical staff   | INT | 10 | 1| Part of PK |
-| patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 5 | P##| Part of PK |
+| patientID  | Part of composite PK, unique ID identifying each patient  | VARCHAR | 10 | P##| Part of PK |
 | time  | Time of appointment  | DATETIME | | | |
 
 
