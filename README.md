@@ -76,7 +76,7 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Column Name   | Description   | Data Type  | Size  | Format | Key? |   
 | ------------- | ------------- | ---------- | ----- | ------ | ---- |
-| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 |IN## | PK |
+| insuranceID  | PK, unique number identifying insurance provider   | VARCHAR | 10 | | PK |
 | policyNo  | Number of policy on file  | VARCHAR | 45 | | |
 | coverage  | Amount paid each month  | VARCHAR | 45 | | |
 | providerName  | Name of insurance provider  | VARCHAR | 45 | | |
