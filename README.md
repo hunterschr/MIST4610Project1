@@ -93,6 +93,13 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | equipmentType  | Branch of Medicine associated with equipment  | VARCHAR | 45 | | |
 | quantityInStock  | Number of the equipment remaining  | INT | | | |
 
+### Table: ItemForService
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| ServicesProvided_serviceID  | PK, unique ID identifying the service | VARCHAR | 45 | | PK - part of whole |
+| Inventory_inventoryID | PK, unique ID identifying the inventory ID | VARCHAR | 5 | | PK - part of whole |
+
 
 ### Table: medicalRecords
 
@@ -149,6 +156,14 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | prescriptionExpiration | Date it Expires | DATE |
 | dosage | # of milligrams  | VARCHAR | 45 | 
 | pharmacyLocation | Location of filling| VARCHAR | 45 | | |
+
+### Table: ServiceForAppointment
+
+| Column Name   | Description   | Data Type  | Size  | Format | Key? |   
+| ------------- | ------------- | ---------- | ----- | ------ | ---- |
+| staffID   | PK, unique ID identifying the staff member   | INT | | | PK - part of whole |
+| patientID | PK, unique ID identifying the patient | VARCHAR | 10 | | PK - part of whole |
+| serviceID | PK, unique ID identifying the service | VARCHAR | 45 | | PK - part of whole |
 
 ### Table: ServicesProvided
 
