@@ -169,9 +169,9 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 | Subquery  |  |  |  | X | X |  |  |  |  |  |
 | GROUP BY  |  | X | X |  |  |  |  |  |  |  |
 | GROUP BY with HAVING  |  |  |  |  | X |  |  |  |  |  |
-| Multi conditional WHERE  | X |  |X  |  |  |  |  |  |  |  |
+| Multi conditional WHERE  | X |  |X  |  |  | X |  |  |  |  |
 | Built in functions  | X | X |  |  | X |  |  |  |  |  |
-| REGEXP  |  |  | X | X |  |  |  |  |  |  |
+| REGEXP  |  |  | X | X |  | X |  |  |  |  |
 | NOT EXISTS  |  |  |  | X |  |  |  |  |  |  |
 
 ### Query 1:
