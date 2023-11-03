@@ -165,11 +165,11 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
 | Feature   | Query 1  | Query 2  | Query 3  | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |     
 | ----------| ---------| ---------| -------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
-| Multiple table join  | X |  |  |  |  |  | X |  | X | X |  
+| Multiple table join  | X |  |  |  |  |  | X | X | X | X |  
 | Subquery  |  |  |  | X | X |  |  |  |  | X |
-| GROUP BY  |  | X | X |  |  |  | X |  | X | X |
+| GROUP BY  |  | X | X |  |  |  | X | X | X | X |
 | GROUP BY with HAVING  |  |  |  |  | X |  |  |  |  |  |
-| Multi conditional WHERE  | X |  | X |  |  | X |  |  |  |  |
+| Multi conditional WHERE  | X |  | X |  |  | X |  | X |  |  |
 | Built in functions  | X | X |  |  | X |  |  |  |  |  |
 | REGEXP  |  |  | X | X |  | X |  |  |  |  |
 | NOT EXISTS  |  |  |  | X |  |  |  |  |  |  |
@@ -231,8 +231,16 @@ The ``EmployeeType`` table keep track of the types of employees through the type
 
   This query allows for staff to compare the number of patients each doctor had an appointment with. This query also helps to recognize which departments are treating a high volume of patients compared to other departments, which would let the administrative staff allocate the proper funding and resources to the departments that need it. On the other hand, this query would also help determine which departments and doctors are not meeting patient or appointment expectations.
 
+  ### Query 8
+Query 8 List out the perscriptionID, the dosage, who prescribed it, and Name of the patient it was prescribed to during a certain time frame
+
+<img width="1116" alt="Screenshot 2023-11-03 at 2 37 16 PM" src="https://github.com/hunterschr/MIST4610Project1/assets/148391441/259856e2-3fd3-469a-838f-80cb2a28a1cf">
+
+  This query will be beneficial in hospitals because it allows employees to backtrack and search for certain information during a certain time period. This query also helps the employees to know right away what they need for a certain patient. If there is also a problem with the medication that was prescribed, they can go back and see who prescribed this medication.
+
+
 ### Query 9
-  Query 9 lists out the type of employee, their description, and the amount of those employees in the clinic.
+  Query 9 lists the type of employee, their description, and the amount of those employees in the clinic.
 
 ![image](https://github.com/hunterschr/MIST4610Project1/assets/148078185/3e46d192-0a19-4bc2-8b51-2c93eef8a451)
 
